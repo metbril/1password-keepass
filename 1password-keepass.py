@@ -163,6 +163,9 @@ def main(argv):
                     #     # add non-standard fields to comment
                     #     comment = append_comment(comment, escape(none_empty(row[fieldnames[fieldname]]))) # append
 
+                if not (type == '' or type == 'Login'):
+                    continue # skip if not a Login
+
                 if title == '' and password == '' and username == '' and comment == '':
                     if args.verbose:
                         print ('Skipping entry {}. No data.'.format(i))
@@ -195,6 +198,7 @@ def main(argv):
             print("</database>", file=fo)
             fo.close()
 
+            print('Script processed {} entries'.format(i))
         except csv.Error as e:
             sys.exit('file {}, line {}: {}'.format(filename, reader.line_num, e))
 

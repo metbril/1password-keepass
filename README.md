@@ -6,6 +6,8 @@ Inspired by the [1password-to-keepassx.py](https://gist.github.com/stromnet/5539
 
 Tested on macOS 10.12.4 Sierra with Python 3.6.1, 1Password 6.7 and KeepassX 0.4.4.
 
-## Using
+## Usage
 
 Type `python3 1password-keepass.py --help` for more information on how to use the script.
+
+The script only processes 'Login' rows and only parses "generic fields".
