@@ -66,7 +66,7 @@ def set_fieldname_dict(fieldnames, language):
                 dict['username'] = fieldname
             elif fieldname == 'Wachtwoord':
                 dict['password'] = fieldname
-            elif fieldname == 'Website':
+            elif fieldname == 'Webadres':
                 dict['url'] = fieldname
             elif fieldname == 'Notities':
                 dict['comment'] = fieldname
